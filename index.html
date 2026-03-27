@@ -3,7 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>PRmarcenaria | Móveis Planejados de Alto Padrão</title>
+    <meta name="description" content="Transformamos ambientes com móveis sob medida de luxo. Especialistas em cozinhas, dormitórios e design de interiores no Rio de Janeiro.">
+    <meta property="og:title" content="PRmarcenaria | Móveis Planejados">
+    <meta property="og:description" content="Qualidade milimétrica e acabamento fino para o seu lar.">
+    <meta property="og:image" content="img/sala.JPG.jpg"> <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
@@ -14,75 +20,78 @@
         <nav class="navbar">
             <div class="logo">PR<span>marcenaria</span></div>
             <ul class="nav-links">
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#galeria">Projetos</a></li>
-                <li><a href="#projeto" class="btn-destaque">Solicitar Orçamento</a></li>
+                <li><a href="#sobre">Nossa Essência</a></li>
+                <li><a href="#galeria">Portfólio</a></li>
+                <li><a href="#projeto" class="btn-cta-nav">Solicitar Orçamento</a></li>
             </ul>
         </nav>
     </header>
 
     <section class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('img/sala.JPG.jpg');">
-        <div class="hero-content" data-aos="zoom-out">
-            <h1>Madeira que conta histórias.</h1>
-            <p>Design sofisticado e execução milimétrica para ambientes exclusivos.</p>
-            <a href="#projeto" class="btn">Iniciar meu sonho</a>
+        <div class="hero-content" data-aos="fade-up">
+            <span class="badge">Design & Sofisticação</span>
+            <h1>A excelência em cada detalhe da sua casa.</h1>
+            <p>Móveis planejados que unem a tradição artesanal à tecnologia de ponta.</p>
+            <div class="hero-btns">
+                <a href="#projeto" class="btn primary">Iniciar Projeto</a>
+                <a href="#galeria" class="btn secondary">Ver Portfólio</a>
+            </div>
         </div>
+    </section>
+
+    <section class="trust-bar">
+        <div class="trust-item"><i class="fas fa-check-circle"></i> Garantia de 5 Anos</div>
+        <div class="trust-item"><i class="fas fa-truck"></i> Entrega no Prazo</div>
+        <div class="trust-item"><i class="fas fa-tools"></i> Montagem Própria</div>
+        <div class="trust-item"><i class="fas fa-tree"></i> 100% MDF Premium</div>
     </section>
 
     <section id="sobre" class="container">
         <div class="section-header" data-aos="fade-up">
-            <h2>Nossa Essência</h2>
+            <h2>Por que a PRmarcenaria?</h2>
             <div class="line"></div>
         </div>
         <div class="grid-3">
             <div class="card" data-aos="fade-up" data-aos-delay="100">
-                <i class="fas fa-pencil-ruler"></i>
-                <h3>Design sob medida</h3>
-                <p>Cada projeto é único, desenhado para aproveitar cada centímetro do seu espaço.</p>
+                <div class="icon-box"><i class="fas fa-pencil-ruler"></i></div>
+                <h3>Projetos Personalizados</h3>
+                <p>Analisamos sua planta para criar soluções que otimizam cada milímetro do ambiente.</p>
             </div>
             <div class="card" data-aos="fade-up" data-aos-delay="200">
-                <i class="fas fa-hammer"></i>
-                <h3>Acabamento Fino</h3>
-                <p>Mão de obra especializada que garante durabilidade e beleza estética superior.</p>
+                <div class="icon-box"><i class="fas fa-gem"></i></div>
+                <h3>Acabamento de Luxo</h3>
+                <p>Ferragens com amortecimento e acabamentos selecionados das melhores marcas.</p>
             </div>
             <div class="card" data-aos="fade-up" data-aos-delay="300">
-                <i class="fas fa-clock"></i>
-                <h3>Compromisso</h3>
-                <p>Respeito rigoroso aos prazos de entrega e montagem limpa no local.</p>
+                <div class="icon-box"><i class="fas fa-user-tie"></i></div>
+                <h3>Atendimento Consultivo</h3>
+                <p>Acompanhamento desde a primeira ideia até a entrega das chaves.</p>
             </div>
         </div>
     </section>
 
     <section id="galeria" class="container gray-bg">
         <div class="section-header" data-aos="fade-up">
-            <h2>Portfólio de Projetos</h2>
-            <p>Clique nas imagens para ampliar e ver detalhes do nosso acabamento.</p>
+            <h2>Projetos de Destaque</h2>
+            <p>Ambientes reais entregues com o padrão de qualidade PRmarcenaria.</p>
         </div>
         
         <div class="portfolio-grid">
-            <div class="portfolio-item" data-aos="fade-up">
-                <img src="img/cozinha.JPG" alt="Cozinha 1">
-                <div class="portfolio-overlay">
-                    <span>Cozinha Clássica</span>
-                </div>
+            <div class="portfolio-item" data-aos="zoom-in">
+                <img src="img/cozinha.JPG" alt="Cozinha">
+                <div class="portfolio-overlay"><span>Cozinha Premium</span></div>
             </div>
-            <div class="portfolio-item" data-aos="fade-up" data-aos-delay="100">
-                <img src="img/cozinha 2.JPG" alt="Cozinha 2">
-                <div class="portfolio-overlay">
-                    <span>Cozinha Moderna</span>
-                </div>
+            <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="100">
+                <img src="img/cozinha 2.JPG" alt="Cozinha Moderna">
+                <div class="overlay-lux"><span>Cozinha Moderna</span></div>
             </div>
-            <div class="portfolio-item" data-aos="fade-up" data-aos-delay="200">
-                <img src="img/cozinha 3.JPG" alt="Cozinha 3">
-                <div class="portfolio-overlay">
-                    <span>Cozinha Gourmet</span>
-                </div>
+            <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="200">
+                <img src="img/cozinha 3.JPG" alt="Cozinha Gourmet">
+                <div class="overlay-lux"><span>Área Gourmet</span></div>
             </div>
-            <div class="portfolio-item" data-aos="fade-up" data-aos-delay="300">
-                <img src="img/sala 1.JPG" alt="Sala 1">
-                <div class="portfolio-overlay">
-                    <span>Sala de Estar</span>
-                </div>
+            <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="300">
+                <img src="img/sala 1.JPG" alt="Sala">
+                <div class="overlay-lux"><span>Living Room</span></div>
             </div>
         </div>
     </section>
@@ -90,49 +99,51 @@
     <section id="projeto" class="form-section">
         <div class="form-wrapper">
             <div class="form-info" data-aos="fade-right">
-                <h2>Vamos planejar seu próximo ambiente?</h2>
-                <p>Nossa equipe de especialistas entrará em contato para agendar uma medição ou analisar sua planta.</p>
-                <div class="contact-details">
-                    <p><i class="fab fa-whatsapp"></i> (XX) XXXXX-XXXX</p>
-                    <p><i class="fas fa-envelope"></i> contato@prmarcenaria.com</p>
-                </div>
+                <h2>Solicite uma Consultoria</h2>
+                <p>Preencha os dados e um de nossos projetistas entrará em contato para transformar seu espaço.</p>
+                <ul class="contact-list">
+                    <li><i class="fab fa-whatsapp"></i> <span>WhatsApp Direto</span></li>
+                    <li><i class="fas fa-map-marker-alt"></i> <span>Atendimento no Rio de Janeiro</span></li>
+                </ul>
             </div>
             <div class="form-card" data-aos="fade-left">
                 <form action="https://api.web3forms.com/submit" method="POST">
                     <input type="hidden" name="access_key" value="SUA-CHAVE-AQUI">
-                    <input type="text" name="nome" placeholder="Seu Nome Completo" required>
-                    <input type="tel" name="whatsapp" placeholder="Seu WhatsApp" required>
+                    <div class="input-group">
+                        <input type="text" name="nome" placeholder="Nome" required>
+                        <input type="tel" name="whatsapp" placeholder="WhatsApp" required>
+                    </div>
                     <select name="servico" required>
-                        <option value="">O que deseja projetar?</option>
+                        <option value="">Ambiente de Interesse</option>
                         <option value="Cozinha">Cozinha</option>
-                        <option value="Quarto">Quarto / Closet</option>
-                        <option value="Sala">Sala / Painel</option>
-                        <option value="Banheiro">Banheiro</option>
-                        <option value="Comercial">Ponto Comercial</option>
+                        <option value="Dormitório">Dormitório</option>
+                        <option value="Sala">Sala / Home</option>
+                        <option value="Corporativo">Escritório / Loja</option>
                     </select>
-                    <textarea name="obs" placeholder="Conte um pouco sobre sua ideia..." rows="4"></textarea>
-                    <button type="submit" class="btn btn-full">Enviar Solicitação</button>
+                    <textarea name="msg" placeholder="Descreva brevemente seu projeto..." rows="4"></textarea>
+                    <button type="submit" class="btn primary btn-full">Solicitar Orçamento Gratuito</button>
                 </form>
             </div>
         </div>
     </section>
 
-    <a href="https://wa.me/55DDDSEUNUMERO" class="whatsapp-float" target="_blank">
+    <a href="https://wa.me/55DDDSEUNUMERO" class="whatsapp-float pulse" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
 
     <footer>
-        <div class="logo">PR<span>marcenaria</span></div>
-        <p>Móveis que transformam espaços em lares.</p>
-        <div class="social-icons">
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
+        <div class="footer-content">
+            <div class="logo">PR<span>marcenaria</span></div>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+            <p>&copy; 2026 PRmarcenaria. Design e Marcenaria de Alto Padrão.</p>
         </div>
-        <hr>
-        <p class="copy">&copy; 2026 PRmarcenaria - Design & Marcenaria de Luxo.</p>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init({ duration: 800, once: true });</script>
+    <script>AOS.init({ duration: 1000, once: true });</script>
 </body>
 </html>
