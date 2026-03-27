@@ -4,11 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PRmarcenaria | Móveis Planejados de Alto Padrão</title>
-    
     <link rel="stylesheet" href="style.css">
-    
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
@@ -18,17 +15,18 @@
             <div class="logo">PR<span>marcenaria</span></div>
             <ul class="nav-links">
                 <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#galeria">Projetos</a></li>
                 <li><a href="#projeto">Solicitar Orçamento</a></li>
-                <li><a href="https://wa.me/5521970184009" class="whatsapp-nav"><i class="fab fa-whatsapp"></i> Contato</a></li>
+                <li><a href="https://wa.me/55DDDSEUNUMERO" class="whatsapp-nav"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="hero">
+    <section class="hero" style="background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('img/sala.JPG');">
         <div class="hero-content" data-aos="fade-up">
             <h1>Transformamos madeira em arte para o seu lar.</h1>
-            <p>Móveis sob medida com precisão milimétrica e design exclusivo.</p>
-            <a href="#projeto" class="btn">Começar Meu Projeto</a>
+            <p>Qualidade, precisão e design exclusivo para cada ambiente.</p>
+            <a href="#projeto" class="btn">Fazer Orçamento Grátis</a>
         </div>
     </section>
 
@@ -43,12 +41,34 @@
             <div class="card" data-aos="zoom-in" data-aos-delay="200">
                 <i class="fas fa-handshake"></i>
                 <h3>Cultura</h3>
-                <p>Valorizamos o trabalho artesanal aliado à tecnologia de ponta.</p>
+                <p>Trabalho artesanal aliado à tecnologia para móveis duradouros.</p>
             </div>
             <div class="card" data-aos="zoom-in" data-aos-delay="300">
                 <i class="fas fa-gem"></i>
                 <h3>Valores</h3>
-                <p>Transparência, sustentabilidade e respeito ao prazo do cliente.</p>
+                <p>Transparência, sustentabilidade e respeito ao seu prazo.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="container gray-bg">
+        <h2 data-aos="fade-up">Nossos Projetos Realizados</h2>
+        <div class="grid-galeria">
+            <div class="item-galeria" data-aos="fade-up">
+                <img src="img/cozinha.JPG" alt="Cozinha">
+                <div class="overlay"><span>Cozinha Clássica</span></div>
+            </div>
+            <div class="item-galeria" data-aos="fade-up" data-aos-delay="100">
+                <img src="img/cozinha 2.JPG" alt="Cozinha 2">
+                <div class="overlay"><span>Cozinha Moderna</span></div>
+            </div>
+            <div class="item-galeria" data-aos="fade-up" data-aos-delay="200">
+                <img src="img/cozinha 3.JPG" alt="Cozinha 3">
+                <div class="overlay"><span>Cozinha Gourmet</span></div>
+            </div>
+            <div class="item-galeria" data-aos="fade-up" data-aos-delay="300">
+                <img src="img/sala 1.JPG" alt="Sala 1">
+                <div class="overlay"><span>Sala de Estar</span></div>
             </div>
         </div>
     </section>
@@ -56,57 +76,51 @@
     <section id="projeto" class="form-section">
         <div class="form-container" data-aos="fade-right">
             <h2>Briefing do Seu Projeto</h2>
-            <p>Preencha os detalhes abaixo para agilizarmos seu atendimento.</p>
-            
-            <form id="briefing-form">
+            <form action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="SUA-CHAVE-AQUI">
+
                 <div class="input-group">
-                    <input type="text" placeholder="Seu Nome Completo" required>
-                    <input type="tel" placeholder="Seu WhatsApp" required>
+                    <input type="text" name="nome" placeholder="Seu Nome" required>
+                    <input type="tel" name="whatsapp" placeholder="WhatsApp" required>
                 </div>
 
-                <label>Quais ambientes você deseja planejar?</label>
+                <label>O que você precisa?</label>
                 <div class="checkbox-group">
-                    <label><input type="checkbox" name="ambiente" value="cozinha"> Cozinha</label>
-                    <label><input type="checkbox" name="ambiente" value="quarto"> Quarto</label>
-                    <label><input type="checkbox" name="ambiente" value="sala"> Sala/Painel</label>
-                    <label><input type="checkbox" name="ambiente" value="banheiro"> Banheiro</label>
-                    <label><input type="checkbox" name="ambiente" value="escritorio"> Escritório</label>
+                    <label><input type="checkbox" name="ambiente[]" value="cozinha"> Cozinha</label>
+                    <label><input type="checkbox" name="ambiente[]" value="quarto"> Quarto</label>
+                    <label><input type="checkbox" name="ambiente[]" value="sala"> Sala</label>
+                    <label><input type="checkbox" name="ambiente[]" value="banheiro"> Banheiro</label>
                 </div>
 
-                <label>Qual o status da sua obra?</label>
-                <select required>
-                    <option value="">Selecione uma opção...</option>
-                    <option value="planta">Ainda na planta / Começando</option>
+                <label>Status da Obra:</label>
+                <select name="status" required>
+                    <option value="">Selecione...</option>
+                    <option value="planta">Na planta</option>
                     <option value="reforma">Em reforma</option>
-                    <option value="pronto">Imóvel pronto para medir</option>
+                    <option value="pronto">Pronto para medir</option>
                 </select>
 
-                <textarea placeholder="Conte-nos um pouco sobre sua ideia (ex: cores preferidas, materiais, urgência...)" rows="5"></textarea>
+                <textarea name="mensagem" placeholder="Descreva brevemente sua ideia..." rows="4"></textarea>
                 
-                <button type="submit" class="btn btn-full">Enviar Proposta de Projeto</button>
+                <button type="submit" class="btn btn-full">Enviar minha ideia</button>
             </form>
         </div>
     </section>
 
-    <a href="https://wa.me/5521970184009" class="whatsapp-float" target="_blank">
+    <a href="https://wa.me/55DDDSEUNUMERO" class="whatsapp-float" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
 
     <footer>
-        <p>&copy; 2026 PRmarcenaria - Transformando espaços com elegância.</p>
+        <div class="logo">PR<span>marcenaria</span></div>
         <div class="social-icons">
             <a href="#"><i class="fab fa-instagram"></i></a>
             <a href="#"><i class="fab fa-facebook"></i></a>
         </div>
+        <p>&copy; 2026 PRmarcenaria - Móveis Planejados.</p>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            duration: 1000, // Duração da animação em ms
-            once: true // Anima apenas uma vez ao fazer scroll
-        });
-    </script>
-
+    <script>AOS.init({ duration: 1000, once: true });</script>
 </body>
 </html>
